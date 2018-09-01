@@ -1,6 +1,6 @@
 var app = new Vue({
     el: '#app',
     data: {
-        toggle: true
+        colors: ['Red', 'Green', 'Blue']
     }
 })

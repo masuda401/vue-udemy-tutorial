@@ -7,7 +7,9 @@
 </head>
 <body>
     <div id="app">
-        <p v-show="toggle">Hello, Vue.js!</p>
+        <ol>
+            <li v-for="color in colors">{{ color }}</li>
+        </ol>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
