@@ -1,10 +1,11 @@
 var app = new Vue({
     el: '#app',
     data: {
-        user: {
-            firstName: 'Taro',
-            lastName: 'Yamada',
-            age: 28
+        now: ''
+    },
+    methods: {
+        onClick: function () {
+            this.now = new Date().toLocaleString();
         }
     }
 })
