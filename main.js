@@ -11,6 +11,7 @@ var app = new Vue({
             }
 
             this.todos.push(todo)
+            this.newItem = ''
         }
     }
 })
