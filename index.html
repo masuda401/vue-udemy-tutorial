@@ -10,11 +10,16 @@
     <h2>ビットコインの現在価格</h2>
     <section v-if="hasError">エラーが発生しました。</section>
     <section v-else>
-        <ul v-cloak>
-            <li v-for="(rate, currency) in bpi">
-                {{ currency }} : {{ rate.rate_float | currencyDecimal }}
-            </li>
-        </ul>
+        <div v-if="loading">
+            ローディング...
+        </div>
+        <div v-else>
+            <ul v-cloak>
+                <li v-for="(rate, currency) in bpi">
+                    {{ currency }} : {{ rate.rate_float | currencyDecimal }}
+                </li>
+            </ul>
+        </div>
     </section>
 </div>
 
